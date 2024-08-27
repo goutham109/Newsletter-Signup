@@ -35,7 +35,7 @@ const apiKey = process.env.MAILCHIMP_API_KEY;
 
 const options = {
   method : "POST",
-  auth   : `${apiKey}`
+  auth   : `anyword:${apiKey}`
 }
 const request = https.request(url,options,function(response) {
  if (response.statusCode === 200) {
